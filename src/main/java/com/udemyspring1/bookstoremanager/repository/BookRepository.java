@@ -1,4 +1,9 @@
 package com.udemyspring1.bookstoremanager.repository;
 
-public interface BookRepository {
+import com.udemyspring1.bookstoremanager.entity.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BookRepository extends JpaRepository<Book,Long> {
+
+
 }
